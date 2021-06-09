@@ -1,0 +1,428 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   padding: 0;
+   margin: 0;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.container {
+   max-width: 1024px;
+}
+
+/* ================================ */
+
+/* ===============
+   HEADER
+   ===============*/
+
+/* top */
+
+.header-top {
+   padding-bottom: 20px;
+}
+
+.header-inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.contacts {
+   display: flex;
+   flex-direction: column;
+   margin: 40px 25px 0 0;
+}
+
+.contacts a {
+   font-family: 'EuropeDemiNormal';
+   text-decoration: none;
+   color: #eb5017;
+   transition: 0.2s linear;
+}
+
+.contacts a:hover {
+   color: #b83608;
+}
+
+/* middle */
+
+.header-center {
+   margin-left: 10px;
+   margin-right: 12px;
+}
+
+.btn-group {
+   display: flex;
+   min-width: 1002px;
+}
+
+.btn-group a {
+   font-size: 14px;
+   padding: 15px 40px 15px 35px;
+   border-right: solid 1px #EB5017;
+   background-color: #231F20;
+   text-decoration: none;
+   color: #fff;
+   text-align: center;
+   transition: 0.2s linear;
+   cursor: pointer;
+}
+
+.btn-group .active {
+   background-color: #EB5017;
+}
+
+.btn-group a:first-child {
+   border-right: none;
+   padding: 15px 35px 15px 65px;
+}
+
+.btn-group a:last-child {
+   border-right: none;
+   padding: 15px 65px 15px 35px;
+}
+
+.btn-group a:hover {
+   background-color: #EB5017;
+}
+
+/* bottom */
+
+.header-bottom {
+   padding: 16px 0 25px 30px;
+}
+
+.breadcrumbs {
+   list-style: none;
+}
+
+.breadcrumb li {
+   display: inline;
+   vertical-align: middle;
+   padding: 0;
+   font-size: 12px;
+}
+
+.breadcrumb>li:first-child:before {
+   display: none;
+}
+
+.breadcrumb>li:before {
+   content: '-';
+   color: #000;
+   margin: 0 4px 0 1px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.breadcrumb a {
+   color: #000;
+   transition: 0.2s linear;
+}
+
+.breadcrumb a:hover {
+   color: rgb(0, 119, 255);
+}
+
+/* ================================ */
+
+/* ===============
+   MAIN
+   ===============*/
+
+main .container {
+   max-width: 650px;
+   margin-left: 30px;
+   background: #F2F2F2;
+}
+
+.main-title {
+   font-size: 30px;
+   color: #EB5017;
+   padding: 20px 0 30px 100px;
+}
+
+.main-inner {
+   display: flex;
+   flex-direction: column;
+   font-size: 14px;
+}
+
+/* rows */
+
+.row {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.row-date, .col-sum, .row-select {
+   width: 50%;
+}
+
+.row-date .label, .col-sum .label, .row-select .label {
+   width: 60%;
+   margin-left: 25px;
+   padding: 3px 0;
+}
+
+.row-date .field, .col-sum .field, .row-select .field {
+   width: 40%;
+}
+
+.form-control {
+   width: 88px;
+   margin-left: 30px;
+   font-size: 14px;
+   padding: 3px 0 3px 10px;
+}
+
+input[id="datepicker"] {
+   cursor: pointer;
+}
+
+#ui-datepicker-div {
+   font-size: 12px;
+}
+
+/* rowSum */
+
+.row-sum {
+   width: 100%;
+}
+
+.col-sum {
+   display: flex;
+}
+
+.col-sum .label {
+   margin-left: 98px;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}
+
+.col-fill {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+
+.col-fill .form-control {
+   width: 225px;
+   height: 8px;
+   margin: 5px 80px 0 20px;
+   padding: 0 0 3px 0;
+}
+
+.value {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-style: italic;
+   font-size: 10px;
+   color: #676767;
+}
+
+.value .left {
+   margin: 5px 0 0 20px;
+}
+
+.value .right {
+   margin: 5px 83px 0 0;
+}
+
+/* rowSelect */
+
+.row-select {
+   margin-bottom: 28px;
+}
+
+.row-select .label {
+   margin-left: 112px;
+}
+
+#select {
+   width: 102px;
+}
+
+/* rowRadio */
+
+.row-radio {
+   width: 55%;
+   margin-bottom: 25px;
+}
+
+.row-radio .label {
+   width: 45%;
+   margin-left: 65px;
+   padding: 3px 0;
+}
+
+.row-radio .field {
+   display: flex;
+   flex-direction: row;
+   width: 55%;
+   font-size: 14px;
+}
+
+.field .label-check-no {
+   margin-left: 30px;
+}
+
+.field .label-check-yes {
+   margin-left: 22px;
+}
+
+.radio {
+   margin-right: 8px;
+}
+
+/* rowSum2 */
+
+.row-sum-last .label {
+   margin-left: 20px;
+}
+
+.row-sum-last {
+   margin-bottom: 30px;
+}
+
+/* rowResult */
+
+.row-result {
+   width: 100%;
+   margin-bottom: 35px;
+}
+
+.btn {
+   margin: 0 25px 0 22px;
+   padding: 10px 15px;
+   font-weight: bold;
+   color: #395306;
+   background-color: #BCF235;
+   border-radius: 10px;
+   border: 2px #C3C4C4 solid;
+   box-shadow: 0px 0px 15px -6px rgb(43, 42, 42);
+   cursor: pointer;
+   transition: 0.2s linear;
+}
+
+.btn:hover {
+   background-color: #b7ff00;
+   text-shadow: none;
+}
+
+.btn:active {
+   background-color: #a0cc01 !important;
+}
+
+.btn:disabled {
+   background-color: #83925c;
+}
+
+.result {
+   padding-top: 12px;
+}
+
+.result span {
+   font-weight: bold;
+   color: #395306;
+}
+
+/* ================================ */
+
+/* ===============
+   FOOTER
+   ===============*/
+
+.footer {
+   margin-top: auto;
+}
+
+footer .container {
+   height: 56px;
+}
+
+.footer-inner {
+   font-size: 12px;
+   margin-left: 10px;
+   margin-right: 12px;
+   background-color: #231F20;
+}
+
+.footer-inner .nav {
+   display: flex;
+   list-style: none;
+   padding: 12px 0 30px 65px;
+}
+
+.nav .nav-link {
+   margin-right: 25px;
+   color: #fff;
+   transition: 0.2s linear;
+}
+
+.nav .nav-link:hover {
+   color: #fff;
+   opacity: 80%;
+}
+
+/* range-style */
+
+input[type='range'] {
+   -webkit-appearance: none;
+   padding: 0!important;
+   overflow: hidden;
+   background: #000;
+   border-radius: 10px;
+   outline: none;
+   border: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+   display: flex;
+   align-items: flex-start;
+   -webkit-appearance: none;
+   height: 10px;
+   width: 10px;
+   background: #ffffff;
+   border-radius: 50%;
+   border: 1px #707070 solid;
+   cursor: pointer;
+   box-shadow: -227px 0 0 225px #8BB02F;
+}
+
+input[type="range"]::-moz-range-progress {
+   background-color: #8BB02F;
+}
+
+input[type="range"]::-moz-range-track {
+   background-color: #000;
+}
+
+input[type="range"]::-ms-fill-lower {
+   background-color: #8BB02F;
+}
+
+input[type="range"]::-ms-fill-upper {
+   background-color: #000;
+}
+
+/* input-style */
+
+input[type="number"]:active, :focus {
+   outline: 0;
+   outline-offset: 0;
+}
